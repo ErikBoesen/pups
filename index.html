@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Erik Boesen's PUP index</title>
+</head>
+<body>
+        <h1>Erik Boesen's PUP index</h1>
+        <p>Here you can find descriptions and samples of some of the PUPs (<strong>P</strong>otentially <strong>U</strong>nwanted <strong>P</strong>rograms) that I've found floating around George Mason High School.</p>
+        <ul>
+            <li>
+                <h2>Spotify Premium(12 Month)</h2>
+                <p>This PUP is a simple AppleScript which on run will repeatedly open Finder windows, speak the word "wat," and turn up the volume to 100%. The process is called "memes." You can kill it quite easily with <code>kill $(ps aux | grep '[S]potify Premium' | awk '{print $2}')</code>. Sometimes it will be a login item, in which case you'll need to remove it from the user's list. You can press Command + Option + W in order to kill all Finder windows.</p>
+                <p>The AppleScript code is as follows:</p>
+                <pre>
+repeat 9999 times
+	tell application "Finder" to make new Finder window
+	set volume output volume 100
+	say "wat" using "Agnes" without stopping current speech
+end repeat
+                </pre>
+                <a href="downloads/spotify-premium.zip">Download</a>
+            </li>
+        </ul>
+</body>
+</html>
